@@ -1,4 +1,4 @@
-module Zxcvbn
+module Zxcvbnjs
   require "execjs"
 
   class Tester

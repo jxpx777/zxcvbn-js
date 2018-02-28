@@ -1,15 +1,15 @@
 require 'pathname'
-require 'zxcvbn/version'
-require 'zxcvbn/tester'
+require 'zxcvbnjs/version'
+require 'zxcvbnjs/tester'
 
-module Zxcvbn
+module Zxcvbnjs
   extend self
 
-  # Returns a Zxcvbn::Score for the given password
+  # Returns a Zxcvbnjs::Score for the given password
   #
   # Example:
   #
-  #   Zxcvbn.test("password").score #=> 0
+  #   Zxcvbnjs.test("password").score #=> 0
   def test(password, user_inputs = [])
     tester = Tester.new
     tester.test(password, user_inputs)

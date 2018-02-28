@@ -3,7 +3,7 @@ require "bundler/gem_tasks"
 require "bundler/setup"
 
 task :console do
-  require 'zxcvbn'
+  require 'zxcvbnjs'
   require './spec/support/js_helpers'
   include JsHelpers
   require 'irb'

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Zxcvbn::Tester do
-  let(:tester) { Zxcvbn::Tester.new }
+describe Zxcvbnjs::Tester do
+  let(:tester) { Zxcvbnjs::Tester.new }
 
   TEST_PASSWORDS.each do |password|
     it "gives back the same score for #{password}" do
