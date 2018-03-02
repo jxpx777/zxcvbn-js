@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/zxcvbn/version', __FILE__)
+require File.expand_path('../lib/zxcvbnjs/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Bit Zesty"]
@@ -13,10 +13,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "zxcvbn-js"
   gem.require_paths = ["lib"]
-  gem.version       = Zxcvbn::VERSION
+  gem.version       = Zxcvbnjs::VERSION
 
   gem.add_dependency 'execjs'
 
-  gem.add_development_dependency 'therubyracer'
+  gem.add_development_dependency 'mini_racer'
   gem.add_development_dependency 'rspec'
 end
