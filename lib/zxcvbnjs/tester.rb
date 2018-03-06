@@ -1,12 +1,13 @@
 module Zxcvbnjs
-  require "execjs"
+  require 'mini_racer'
 
   class Tester
     DATA_PATH = Pathname(File.expand_path('../../../data/zxcvbn.js', __FILE__))
 
     def initialize
       src = File.read(DATA_PATH)
-      @context = ExecJS.compile(src)
+      @context = MiniRacer::Context.new
+      @context.eval(src)
     end
 
     def test(password, user_inputs = [])
