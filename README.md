@@ -19,7 +19,7 @@ Example usage:
 
 ```ruby
 $ irb
->> require 'zxcvbn'
+>> require 'zxcvbnjs'
 => true
 >> Zxcvbnjs.test('@lfred2004', ['alfred'])
 => #<OpenStruct password="@lfred2004", guesses=15000, guesses_log10=4.176091259055681, sequence=[{"pattern"=>"dictionary", "i"=>0, "j"=>5, "token"=>"@lfred", "matched_word"=>"alfred", "rank"=>1, "dictionary_name"=>"user_inputs", "reversed"=>false, "l33t"=>true, "sub"=>{"@"=>"a"}, "sub_display"=>"@ -> a", "base_guesses"=>1, "uppercase_variations"=>1, "l33t_variations"=>2, "guesses"=>50, "guesses_log10"=>1.6989700043360185}, {"pattern"=>"regex", "token"=>"2004", "i"=>6, "j"=>9, "regex_name"=>"recent_year", "regex_match"=>["2004"], "guesses"=>50, "guesses_log10"=>1.6989700043360185}], calc_time=10, crack_times_seconds={"online_throttling_100_per_hour"=>540000, "online_no_throttling_10_per_second"=>150, "offline_slow_hashing_1e4_per_second"=>1.5, "offline_fast_hashing_1e10_per_second"=>1.5e-06}, crack_times_display={"online_throttling_100_per_hour"=>"6 days", "online_no_throttling_10_per_second"=>"3 minutes", "offline_slow_hashing_1e4_per_second"=>"2 seconds", "offline_fast_hashing_1e10_per_second"=>"less than a second"}, score=1, feedback={"warning"=>"", "suggestions"=>["Add another word or two. Uncommon words are better.", "Predictable substitutions like '@' instead of 'a' don't help very much"]}>

@@ -1,5 +1,4 @@
 require 'mini_racer'
-require 'json'
 
 module JsHelpers
   class JsMethodInvoker
