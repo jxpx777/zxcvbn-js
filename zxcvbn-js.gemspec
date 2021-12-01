@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Zxcvbnjs::VERSION
 
-  gem.add_dependency 'mini_racer'
+  gem.add_dependency 'mini_racer', '~> 0.5'
 
   gem.add_development_dependency 'rspec'
 end
