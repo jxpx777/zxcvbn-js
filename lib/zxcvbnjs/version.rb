@@ -1,3 +1,3 @@
 module Zxcvbnjs
-  VERSION = "4.4.4betterment"
+  VERSION = "4.5.0betterment"
 end
